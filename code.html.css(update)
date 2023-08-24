@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> YEOMI<3 </title>
+{
+<script type="text/javascript"> 
+        alert("Website deleted by the author") 
+       </script>
+}
+    <style>
+        body {
+            background-color: #f5d2fc;
+            text-align: justify;
+        }
+
+        #typewriter-text {
+            overflow: hidden;
+            white-space: nowrap;
+            border-right: 1px solid black;
+            font-family: arial; 
+        }
+    </style>
+</head>
+<body>
+    <h6 id="typewriter-text"></h6>
+    <script>
+        const text = " We're sorry, the website you're looking for is now DELETED. The author greatly appreciates that you still remember and visit the website. Wishing you endless happiness, wherever life takes you^^";
+        const delay = 100;
+
+        const typewriterElement = document.getElementById('typewriter-text');
+        let i = 0;
+
+        function type() {
+            if (i < text.length) {
+                typewriterElement.innerHTML += text.charAt(i);
+                i++;
+                setTimeout(type, delay);
+            }
+        }
+
+        type();
+    </script>
+</body>
+</html>
